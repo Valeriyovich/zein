@@ -1,0 +1,104 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block body_content %}  
+<div class="row m0p0" style="background-color: #f1f1f1;">
+    <div class="col-12 m0p0 d-flex justify-content-center">
+        <div class="col-9 m0p0">
+            <div class="col-12 m0p0 mt-5 mb-5 d-flex justify-content-center">
+                <div class="col-6 m0p0 bg-light" style="border-radius: 8px;">
+                    <form action="/">
+                        <div class="form pl-5 pr-5 m-5 ">
+                            <h3 class="pb-3">
+                                <b>
+                                    About me
+                                </b>
+                            </h3>
+                            <div class="form-group">
+                                <label for="name" class="text-uppercase text__gray1">Full name</label> <br>
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Alina Litvin">
+                            </div>
+                            <div class="form-group">
+                                <label for="mail" class="text-uppercase text__gray1">E-mail</label> <br>
+                                <input type="text" name="name" id="mail" class="form-control" placeholder="Example@gmail.com">
+                            </div> 
+                            <div class="form-group mb-5">
+                                <label for="phone" class="text-uppercase text__gray1">Phone</label> <br>
+                                <input type="text" name="name" id="phone" class="form-control" placeholder="+1 456 606 786 09">
+                            </div>
+                            <div class="pb-3">
+                                <h3>
+                                    <b>
+                                        About the house
+                                    </b>
+                                </h3>
+                            </div>
+                            <div class="form-group">
+                                <label for="adress" class="text__gray1">street address</label>
+                                <input type="text" id="adress" name="adres" class="form-control" placeholder="11250 Ramona Ave Spc 104">
+                            </div>
+                            <div class="form-group">
+                                <label for="city" class="text__gray1">city</label> 
+                                <input type="text" id="adress" name="adres" id="city" class="form-control" placeholder="Montclear">
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <label for="state" class="text__gray1"> state</label>
+                                    <input type="text" id="state" class="form-control">
+                                </div>
+                                <div class="col">
+                                    <label for="zip" class="text__gray1"> zip</label>
+                                    <input type="text" id="zip" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-row mt-3">
+                                <div class="col">
+                                    <label for="acreclot" class="text__gray1"> acrec lot</label>
+                                    <input type="text" id="acreclot" class="form-control">
+                                </div>
+                                <div class="col">
+                                    <label for="type_" class="text__gray1"> type</label>
+                                    <input type="text" id="type_" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-row mt-3">
+                                <div class="col">
+                                    <label for="beds" class="text__gray1"> beds</label>
+                                    <input type="text" id="beds" class="form-control">
+                                </div>
+                                <div class="col">
+                                    <label for="bath" class="text__gray1">bath</label>
+                                    <input type="text" id="bath" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group mt-3">
+                                <label for="city" class="text__gray1">asking price</label> 
+                                <input type="text" id="adress" name="adres" id="city" class="form-control" placeholder="Montclear">
+                            </div>
+
+                            <div class="d-flex justify-content-end pt-3">
+                                <button class="btn btn-lg text-light pr-3 pl-3 pb-3" style="background-color: #D1964C; width: max-content;">
+                                    Next step &gt;
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+   
+    
+
+    <!-- Дополнительный JavaScript; выберите один из двух! -->
+
+    <!-- Вариант 1: Bootstrap в связке с Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Вариант 2: Bootstrap JS отдельно от Popper
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+{% endblock %}

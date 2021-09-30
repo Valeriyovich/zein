@@ -1,0 +1,408 @@
+header {
+    height: 42px;
+}
+a {
+    color: #3B3D33;
+}
+a:hover {
+    text-decoration: none;
+    color: #3B3D33;
+}
+b {
+    color: #444443;
+}
+button {
+    background: #CB934A;
+    border: 0;
+    height: 42px;
+    width: 100px;
+    color: white;
+    font-size: 14px;
+    border-radius: 7px;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.logo_div {
+
+    margin-left: 25px;
+    margin-top: 10px;
+
+    font-family: Open Sans;
+    font-size: 21px;
+    line-height: 29px;
+    letter-spacing: 0.03em;
+
+    color: #0F0D21;
+
+}
+.header_menu, .header_menu2 {
+    display: flex;
+    position: absolute;
+    left: 14.1%;
+    top: 2.5%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #3B3D33;
+}
+.header_menu2 {
+    right: 0;
+    left: auto;
+}
+.header_menu .aboutus {
+    margin-left: 29px;
+    width: 120px;
+}
+.header_menu .aboutus:hover>.about-dropdown {
+    display: block;
+}
+.about-dropdown {
+    display: none;
+}
+.header_menu .blog {
+    margin-left: -15px;
+}
+.header_menu2 div {
+    margin-right: 30px;
+}
+.header_menu2 .login {
+    margin-right: 5px;
+}
+.header_menu2 .login img {
+    margin-top: -5px;
+    margin-right: 10px;
+}
+.group146 {
+    background: black;
+    margin-bottom: 47px;
+}
+.search_div {
+    position: relative;
+}
+.group146 .search_div {
+    width: 1440px;
+    margin: auto;
+}
+.group146 .search_div .title {
+    position: absolute;
+    top: 102px;
+    left: 197px;
+    color: white;
+    font-size: 54px;
+    font-weight: 800;
+    width: 615px;
+    line-height: 1.4;
+}
+.group146 .search_div input {
+    position: absolute;
+    top: 339px;
+    left: 183px;
+    width: 603px;
+    height: 60px;
+    border: 0;
+    border-radius: 10px;
+    padding: 0 17px;
+    background: white url("/static/img/search.png") no-repeat scroll 564px 19px;
+}
+.container_header {
+    padding-top: 24px;
+    position: relative;
+}
+.container_header h2 {
+    font-weight: 750;
+    margin-left: 38px;
+    letter-spacing: -0.05rem;
+}
+.container_header a {
+    color: #D1964C !important;
+}
+.container_header div {
+    position: absolute;
+    right: 30px;
+    top: 32px;
+    font-size: 16px;
+    font-weight: 800;
+}
+.container_header img {
+    margin-left: 15px;
+}
+.row.product-list {
+    margin: 53px 0 13px;
+    padding: 0 24px;
+}
+.row.product-list .photo img {
+    border-radius: 8px;
+}
+.row.product-list .photo .posted, .row.product-list .photo .opened  {
+    font-size: 13px;
+    background: #CB934A;
+    color: white;
+    position: absolute;
+    top: 13px;
+    left: 15px;
+    height: 27px;
+    padding: 3px 6px;
+    border-radius: 3px;
+}
+.row.product-list .photo {
+    box-shadow: 8px 17px 20px -5px rgba(92,100,106,0.51);
+    position: relative;
+}
+.row.product-list .photo .opened {
+    background: white;
+    color: #A4ADAF;
+    left: 113px;
+}
+.row.product-list .photo .favourite {
+    position: absolute;
+    top: 10px;
+    right: 6px;
+}
+.row.product-list .photo .h_select {
+    position: absolute;
+    right: 5px;
+    bottom: -13px;
+    width: 61px;
+    height: 32px;
+    padding: 4px 6px;
+    font-size: 11px;
+    color: #3B3D33;
+}
+.row.product-list .photo .h_select img {
+    border-radius: 0;
+    margin-right: 7px;
+}
+.product {
+    margin-bottom: 50px;
+}
+.row.product-list .product_info {
+    margin-top: 15px;
+    padding: 0 15px;
+}
+.row.product-list .product_info .price {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+.row.product-list .product_info .add_info {
+    margin-top: 4px;
+    color: #A4ADAF;
+}
+.row.product-list .product_info .add_info .col-4 {
+    margin-right: -10px;
+}
+.row.product-list .product_info .add_info .acrec {
+    min-width: 135px;
+}
+.row.product-list .product_info .add_info img {
+    margin-right: 3px;
+}
+.row.news-list {
+    margin-top: 55px;
+    margin-bottom: 125px;
+    padding: 0 42px;
+}
+.row.news-list .cat {
+    color: #CB934A;
+    font-size: 13px;
+    margin-top: 28px;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+}
+.row.news-list .title {
+    font-weight: 700;
+    margin-top: 14px;
+    letter-spacing: 0.02rem;
+    color: #3B3D33;
+}
+.row.news-list .date {
+    font-size: 14px;
+    margin-top: 14px;
+    letter-spacing: 0.05rem;
+    color: #AAA7A5;
+}
+.diff {
+    background: #F8F7F6;
+    padding-bottom: 70px;
+    margin-bottom: 80px;
+}
+.row.difference .col-6.left {
+     padding: 27px 8px 34px 57px;
+}
+.row.difference .col-6.left .left_side {
+    background: #807C78;
+    color: white;
+    padding: 22px 0 25px;
+    border-radius: 10px;
+}
+.row.difference .row {
+    margin-bottom: -5px;
+}
+.row.difference .row .col-10 {
+    margin-left: -18px;
+}
+.row.difference .col-6 h2, .row.like2do h2 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.06rem;
+}
+.row.difference .col-6.left .left_side p {
+    font-size: 14px;
+}
+.row.difference .col-6.left img {
+    margin: 20px 0 0 33px;
+}
+.row.difference .col-6.right {
+    padding: 31px 87px 0 79px;
+    color: #444443;
+}
+.row.difference .col-6.right h2 {
+    line-height: 2rem;
+    margin-bottom: 22px;
+}
+.row.difference .col-6.right p {
+    font-size: 14px;
+    line-height: 1.4rem;
+}
+.row.difference .col-6.right .search_div {
+    margin: 52px 0 0 -15px;
+    width: 435px;
+    box-shadow: 8px 17px 20px -5px rgba(92,100,106,0.51);
+}
+.row.difference .col-6.right .search {
+    border: 0;
+    border-radius: 10px;
+    padding: 0 17px;
+    background: white url("/static/img/search.png") no-repeat 420px 15px;
+    height: 56px;
+    width: 461px;
+}
+.row.difference .col-6.right .group425 {
+    margin-top: 40px;
+    display: flex;
+    width: 440px;
+}
+.row.difference .col-6.right .group425 .images {
+    display: flex;
+    margin-top: -3px;
+    margin-right: 20px;
+}
+.row.difference .col-6.right .group425 p {
+    margin-top: 10px;
+    font-size: 16px;
+    margin-right: 64px;
+}
+.row.difference .col-6.right .group425 .image {
+    height: 55px;
+    width: 44px;
+    margin-right: -3px;
+}
+.row.difference .col-6.right .group425 .image img {
+    margin: 2px 1px 1px 4px;
+}
+.row.difference .col-6.right .group425 .image.number {
+    text-align: center;
+    padding-top: 7px;
+}
+.row.like2do {
+    padding: 44px 44px 0px 38px;
+    margin-bottom: 77px;
+}
+.row.like2do .photo {
+    margin-bottom: 32px;
+}
+.row.like2do .photo img {
+    border-radius: 8px;
+}
+.row.like2do h2 {
+    letter-spacing: 0.03rem;
+}
+.row.like2do p {
+    letter-spacing: -0.035rem;
+    margin-bottom: 0;
+}
+.row.like2do .list {
+    margin-top: 20px;
+    margin-bottom: 33px;
+}
+.row.like2do .list img {
+    margin-right: 10px;
+}
+.row.like2do button {
+    width: 200px;
+    height: 47px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.row.exp_tour {
+    margin-top: 35px;
+    padding-left: 54px;
+    margin-bottom: 56px;
+}
+.row.exp_tour .accordion {
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+    padding: 20px 0;
+    border-top: 1px solid #E5E2DC;
+}
+.row.exp_tour .accordion:first-child {
+    border-top: 0;
+}
+.row.exp_tour h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 18px;
+    letter-spacing: 0.05rem;
+}
+.row.exp_tour .accordion img {
+    height: 20px;
+}
+.row.exp_tour .acc_content div {
+    margin-left: 38px;
+    margin-bottom: 40px;
+}
+.footer .container {
+    background: #EAE6E0;
+    max-width: 90%;
+    border-radius: 8px;
+    padding: 114px 0 0 107px;
+}
+.footer .col-2 {
+    margin-left: -14px;
+    margin-top: 8px;
+    margin-right: -4px;
+}
+.footer .col-2.logo {
+    margin: 0;
+}
+.footer h3 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.03rem;
+}
+.footer .col-2 .list img {
+    margin-right: 11px;
+    margin-top: -7px;
+}
+.footer .list {
+    margin-top: 21px;
+    margin-left: -2px;
+    padding-top: 5px;
+    font-size: 14px;
+    letter-spacing: 0.02rem;
+}
+.footer .col-2 .list div {
+    margin-bottom: 9px;
+}
+.footer .col-3 {
+    margin-top: 8px;
+    margin-left: 40px;
+    margin-right: -51px;
+}
+.footer .col-3 .list {
+    margin-top: 11px;
+    width: 204px;
+}

@@ -1,0 +1,5 @@
+django
+oauth2
+oauth2-facebook-login
+oauth2-google-login
+django-allauth

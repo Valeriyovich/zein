@@ -1,0 +1,446 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block body_content %}
+    <div class="group146">
+        <div class="search_div">
+            <img class="background" src="{% static 'img/group146back.png' %}">
+            <div class="title">Discover a place you'll love to live happy</div>
+            <input type="text" placeholder="Enter address, city or zip code">
+        </div>
+    </div>
+    <div class="container">
+        <div class="container_header">
+            <h2>Featured property list</h2>
+            <div><a href="#">View all 19<img src="{% static 'img/rarrow.png' %}"></a></div>
+        </div>
+        <div class="row product-list">
+            <div class="col-4 product">
+                <div class="photo">
+                    <img src="{% static 'img/product_image.png' %}">
+                    <div class="posted">18 Hours ago</div>
+                    <div class="opened">Open Sun <b>8/12 12-2</b> PM</div>
+                    <div class="favourite"><a href="#"><img src="{% static 'img/favourite.png' %}"></a> </div>
+                    <div style="background: transparent url('{% static 'img/Union.png' %}') no-repeat" class="h_select"><a href="#"><img src="{% static 'img/house_ico.png' %}">Select</a> </div>
+                </div>
+                <div class="product_info">
+                    <a href="{% url 'property' %}">
+                        <div class="price">$ 1,784,000</div>
+                        <div class="address">56160 Stellar Dr, Bend, OR 97707 Stellar</div>
+                        <div class="add_info row">
+                            <div class="col-4"><img src="{% static 'img/bed.png' %}"> <b>5</b> beds</div>
+                            <div class="col-4"><img src="{% static 'img/bath.png' %}"> <b>5</b> bath</div>
+                            <div class="col-4 acrec"><img src="{% static 'img/acrec.png' %}"> <b>5</b> acrec lot</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 product">
+                <div class="photo">
+                    <img src="{% static 'img/product_image.png' %}">
+                    <div class="posted">18 Hours ago</div>
+                    <div class="opened">Open Sun <b>8/12 12-2</b> PM</div>
+                    <div class="favourite"><a href="#"><img src="{% static 'img/favourite.png' %}"></a> </div>
+                    <div style="background: transparent url('{% static 'img/Union.png' %}') no-repeat" class="h_select"><a href="#"><img src="{% static 'img/house_ico.png' %}">Select</a> </div>
+                </div>
+                <div class="product_info">
+                    <a href="{% url 'property' %}">
+                        <div class="price">$ 1,784,000</div>
+                        <div class="address">56160 Stellar Dr, Bend, OR 97707 Stellar</div>
+                        <div class="add_info row">
+                            <div class="col-4"><img src="{% static 'img/bed.png' %}"> <b>5</b> beds</div>
+                            <div class="col-4"><img src="{% static 'img/bath.png' %}"> <b>5</b> bath</div>
+                            <div class="col-4 acrec"><img src="{% static 'img/acrec.png' %}"> <b>5</b> acrec lot</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 product">
+                <div class="photo">
+                    <img src="{% static 'img/product_image.png' %}">
+                    <div class="posted">18 Hours ago</div>
+                    <div class="opened">Open Sun <b>8/12 12-2</b> PM</div>
+                    <div class="favourite"><a href="#"><img src="{% static 'img/favourite.png' %}"></a> </div>
+                    <div style="background: transparent url('{% static 'img/Union.png' %}') no-repeat" class="h_select"><a href="#"><img src="{% static 'img/house_ico.png' %}">Select</a> </div>
+                </div>
+                <div class="product_info">
+                    <a href="{% url 'property' %}">
+                        <div class="price">$ 1,784,000</div>
+                        <div class="address">56160 Stellar Dr, Bend, OR 97707 Stellar</div>
+                        <div class="add_info row">
+                            <div class="col-4"><img src="{% static 'img/bed.png' %}"> <b>5</b> beds</div>
+                            <div class="col-4"><img src="{% static 'img/bath.png' %}"> <b>5</b> bath</div>
+                            <div class="col-4 acrec"><img src="{% static 'img/acrec.png' %}"> <b>5</b> acrec lot</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 product">
+                <div class="photo">
+                    <img src="{% static 'img/product_image.png' %}">
+                    <div class="posted">18 Hours ago</div>
+                    <div class="opened">Open Sun <b>8/12 12-2</b> PM</div>
+                    <div class="favourite"><a href="#"><img src="{% static 'img/favourite.png' %}"></a> </div>
+                    <div style="background: transparent url('{% static 'img/Union.png' %}') no-repeat" class="h_select"><a href="#"><img src="{% static 'img/house_ico.png' %}">Select</a> </div>
+                </div>
+                <div class="product_info">
+                    <a href="{% url 'property' %}">
+                        <div class="price">$ 1,784,000</div>
+                        <div class="address">56160 Stellar Dr, Bend, OR 97707 Stellar</div>
+                        <div class="add_info row">
+                            <div class="col-4"><img src="{% static 'img/bed.png' %}"> <b>5</b> beds</div>
+                            <div class="col-4"><img src="{% static 'img/bath.png' %}"> <b>5</b> bath</div>
+                            <div class="col-4 acrec"><img src="{% static 'img/acrec.png' %}"> <b>5</b> acrec lot</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 product">
+                <div class="photo">
+                    <img src="{% static 'img/product_image.png' %}">
+                    <div class="posted">18 Hours ago</div>
+                    <div class="opened">Open Sun <b>8/12 12-2</b> PM</div>
+                    <div class="favourite"><a href="#"><img src="{% static 'img/favourite.png' %}"></a> </div>
+                    <div style="background: transparent url('{% static 'img/Union.png' %}') no-repeat" class="h_select"><a href="#"><img src="{% static 'img/house_ico.png' %}">Select</a> </div>
+                </div>
+                <div class="product_info">
+                    <a href="{% url 'property' %}">
+                        <div class="price">$ 1,784,000</div>
+                        <div class="address">56160 Stellar Dr, Bend, OR 97707 Stellar</div>
+                        <div class="add_info row">
+                            <div class="col-4"><img src="{% static 'img/bed.png' %}"> <b>5</b> beds</div>
+                            <div class="col-4"><img src="{% static 'img/bath.png' %}"> <b>5</b> bath</div>
+                            <div class="col-4 acrec"><img src="{% static 'img/acrec.png' %}"> <b>5</b> acrec lot</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 product">
+                <div class="photo">
+                    <img src="{% static 'img/product_image.png' %}">
+                    <div class="posted">18 Hours ago</div>
+                    <div class="opened">Open Sun <b>8/12 12-2</b> PM</div>
+                    <div class="favourite"><a href="#"><img src="{% static 'img/favourite.png' %}"></a> </div>
+                    <div style="background: transparent url('{% static 'img/Union.png' %}') no-repeat" class="h_select"><a href="#"><img src="{% static 'img/house_ico.png' %}">Select</a> </div>
+                </div>
+                <div class="product_info">
+                    <a href="{% url 'property' %}">
+                        <div class="price">$ 1,784,000</div>
+                        <div class="address">56160 Stellar Dr, Bend, OR 97707 Stellar</div>
+                        <div class="add_info row">
+                            <div class="col-4"><img src="{% static 'img/bed.png' %}"> <b>5</b> beds</div>
+                            <div class="col-4"><img src="{% static 'img/bath.png' %}"> <b>5</b> bath</div>
+                            <div class="col-4 acrec"><img src="{% static 'img/acrec.png' %}"> <b>5</b> acrec lot</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container_header">
+            <h2>Featured news</h2>
+            <div><a href="{% url 'news_blog' %}">View all 11<img src="{% static 'img/rarrow.png' %}"></a></div>
+        </div>
+        <div class="row news-list">
+            <div class="col-3 news">
+                <div class="photo">
+                    <img src="{% static 'img/news_image.png' %}">
+                </div>
+                <div class="cat">
+                    SPONSORED CONTENT
+                </div>
+                <div class="title">
+                    <a href="#">The 5 Biggest Mistakes Veteran and Military Home Buyers Make</a>
+                </div>
+                <div class="date">
+                    Jule 4th, 2019
+                </div>
+            </div>
+            <div class="col-3 news">
+                <div class="photo">
+                    <img src="{% static 'img/news_image.png' %}">
+                </div>
+                <div class="cat">
+                    SPONSORED CONTENT
+                </div>
+                <div class="title">
+                    <a href="#">The 5 Biggest Mistakes Veteran and Military Home Buyers Make</a>
+                </div>
+                <div class="date">
+                    Jule 4th, 2019
+                </div>
+            </div>
+            <div class="col-3 news">
+                <div class="photo">
+                    <img src="{% static 'img/news_image.png' %}">
+                </div>
+                <div class="cat">
+                    SPONSORED CONTENT
+                </div>
+                <div class="title">
+                    <a href="#">The 5 Biggest Mistakes Veteran and Military Home Buyers Make</a>
+                </div>
+                <div class="date">
+                    Jule 4th, 2019
+                </div>
+            </div>
+            <div class="col-3 news">
+                <div class="photo">
+                    <img src="{% static 'img/news_image.png' %}">
+                </div>
+                <div class="cat">
+                    SPONSORED CONTENT
+                </div>
+                <div class="title">
+                    <a href="#">The 5 Biggest Mistakes Veteran and Military Home Buyers Make</a>
+                </div>
+                <div class="date">
+                    Jule 4th, 2019
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="diff">
+        <div class="container">
+            <div class="container_header">
+                <h2>What`s difference</h2>
+            </div>
+            <div class="row difference">
+            <div class="col-6 left">
+                <div class="left_side">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="{% static 'img/protection.png' %}">
+                        </div>
+                        <div class="col-10">
+                            <p><h2>Protection</h2></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="{% static 'img/control.png' %}">
+                        </div>
+                        <div class="col-10">
+                            <p><h2>Control</h2></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="{% static 'img/reliability.png' %}">
+                        </div>
+                        <div class="col-10">
+                            <p><h2>Reliability</h2></p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 right">
+                <h2>
+                    Everything you need to know about Select 4 on RealZain. Some a new opportunity.
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation.
+                </p>
+                <div class="search_div">
+                    <input type="text" class="search" placeholder="Canandaigua, NY">
+                </div>
+                <div class="group425">
+                    <p>Lorem ipsum</p>
+                    <div class="images">
+                        <div style="background: transparent url('{% static "img/union_small.png" %}') no-repeat" class="image">
+                            <img src="{% static 'img/small_img.png' %}">
+                        </div>
+                        <div style="background: transparent url('{% static "img/union_small.png" %}') no-repeat" class="image">
+                            <img src="{% static 'img/small_img.png' %}">
+                        </div>
+                        <div style="background: transparent url('{% static "img/union_small.png" %}') no-repeat" class="image">
+                            <img src="{% static 'img/small_img.png' %}">
+                        </div>
+                        <div style="background: transparent url('{% static "img/union_small.png" %}') no-repeat" class="image number">
+                            4
+                        </div>
+                    </div>
+                    <button>Continue</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container_header">
+            <h2>What would you like to do?</h2>
+        </div>
+        <div class="row like2do">
+            <div class="col-4">
+                <div class="photo">
+                    <img src="{% static 'img/like2do.png' %}">
+                </div>
+                <h2>Get into the perfect house</h2>
+                <div class="list">
+                    <p><img src="{% static 'img/check.png' %}">Lorem ipsum dolor sit amet, consecte</p>
+                    <p><img src="{% static 'img/check.png' %}">Lorem ipsum dolor sit amet, consecte</p>
+                </div>
+                <button>Search properties</button>
+            </div>
+            <div class="col-4">
+                <div class="photo">
+                    <img src="{% static 'img/like2do.png' %}">
+                </div>
+                <h2>List your property</h2>
+                <div class="list">
+                    <p><img src="{% static 'img/check.png' %}">Lorem ipsum dolor sit amet, consecte</p>
+                    <p><img src="{% static 'img/check.png' %}">Lorem ipsum dolor sit amet, consecte</p>
+                </div>
+                <a href="{% url 'list_new_property' %}">List your property</a>
+            </div>
+            <div class="col-4">
+                <div class="photo">
+                    <img src="{% static 'img/like2do.png' %}">
+                </div>
+                <h2>How much your house cost</h2>
+                <div class="list">
+                    <p><img src="{% static 'img/check.png' %}">Lorem ipsum dolor sit amet, consecte</p>
+                    <p><img src="{% static 'img/check.png' %}">Lorem ipsum dolor sit amet, consecte</p>
+                </div>
+                <button>Free valuation</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container_header">
+            <h2>The experience tour</h2>
+        </div>
+        <div class="row exp_tour">
+            <div data-toggle="collapse" data-target="#acc1" class="accordion">
+                <img src="{% static 'img/acc_button.png' %}">
+                <h3>From Contact To Finish?</h3>
+            </div>
+            <div id="acc1" class="collapse acc_content">
+                <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </div>
+            </div>
+            <div data-toggle="collapse" data-target="#acc2" class="accordion">
+                <img src="{% static 'img/acc_button.png' %}">
+                <h3>How does the process of selling a home on RealZain?</h3>
+            </div>
+            <div id="acc2" class="collapse acc_content">
+                <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </div>
+            </div>
+            <div data-toggle="collapse" data-target="#acc3" class="accordion">
+                <img src="{% static 'img/acc_button.png' %}">
+                <h3>How does the process of selling a home on RealZain?</h3>
+            </div>
+            <div id="acc3" class="collapse acc_content">
+                <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </div>
+            </div>
+            <div data-toggle="collapse" data-target="#acc4" class="accordion">
+                <img src="{% static 'img/acc_button.png' %}">
+                <h3>How does the process of selling a home on RealZain?</h3>
+            </div>
+            <div id="acc4" class="collapse acc_content">
+                <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </div>
+            </div>
+            <div data-toggle="collapse" data-target="#acc5" class="accordion">
+                <img src="{% static 'img/acc_button.png' %}">
+                <h3>How does the process of selling a home on RealZain?</h3>
+            </div>
+            <div id="acc5" class="collapse acc_content">
+                <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact_panel coll">
+        <p>What would you like to do?</p>
+        <button id="contact_agent" class="white">Contact agent</button>
+        <div class="collapsable">
+            <button>List your property</button>
+            <button class="white">Get free evaluation</button>
+        </div>
+        <button id="contact_col"></button>
+    </div>
+    <div class="contact_form">
+        <div class="row">
+            <div class="col-12">
+                <h3>
+                    Contact agent
+                </h3>
+                <button class="close"></button>
+            </div>
+        </div>
+        <form id="contact_form">
+            <div class="row">
+                    {% csrf_token %}
+                    <div class="col-6">
+                        <input name="name" placeholder="Name" type="text">
+                        <label class="error_message" for="name" id="id_name"></label>
+                    </div>
+                    <div class="col-6">
+                        <input name="phone" placeholder="Phone" type="text">
+                        <label class="error_message" for="phone" id="id_phone"></label>
+                    </div>
+                    <div class="col-12">
+                        <input name="email" placeholder="Email" type="text">
+                        <label class="error_message" for="email" id="id_email"></label>
+                    </div>
+                    <div class="col-12">
+                        <textarea name="message"></textarea>
+                        <label class="error_message" for="message" id="id_message"></label>
+                    </div>
+                    <div class="col-12">
+                        <button type="button" class="contact_submit">Contact agent</button>
+                    </div>
+                    <div class="col-12">
+                        <div class="checkbox_div">
+                            <input name="financing" id="cf_check" type="checkbox">
+                            <label for="cf_check">
+
+                            </label>
+                            <p>I want to talk about financing.</p>
+                        </div>
+                    </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}
+{% block extra_scripts %}
+    $("#contact_col").click(function () {
+        $(".contact_panel").toggleClass('coll')
+    });
+    $(".contact_form .close").click(function () {
+        $(".contact_form").hide()
+    });
+    $("#contact_agent").click(function () {
+        $(".contact_form").show()
+    })
+    $("#contact_form .contact_submit").unbind('click').click(function() {
+        $(".error_message").html('')
+        $.post('/contact_create/', $("#contact_form").serialize())
+            .done(function(data) {
+                var data_json = JSON.parse(data)
+                console.log(data)
+                if (!data_json['ok']) {
+                    for (var i=0; i<data_json.length; i++) {
+                        console.log(data_json[i]['key'] + ' ' + data_json[i]['desc'])
+                        $(data_json[i]['key']).html(data_json[i]['desc'])
+                    }
+                } else {
+                    $(".contact_form").hide()
+                    $("#contact_form")[0].reset()
+                    alert("Done!")
+                }
+            })
+    })
+{% endblock %}

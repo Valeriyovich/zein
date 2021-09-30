@@ -1,0 +1,298 @@
+{% load static %}
+{% load socialaccount %}
+{% providers_media_js %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zain Property</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="{% static "css/style.css" %}?v=0001" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,800" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{% static "css/main_style.css" %}">
+</head>
+<body>
+    <header>
+        <div class="logo_div"><a href="/"><img src="{% static "img/logo.png" %}"></a></div>
+        <div class="header_menu">
+            <div><a href="#"> Search</a></div>
+            <div class="aboutus {% if request.path == '/about/' or request.path == '/about_office/' %}ab_active{% endif %}">
+                <a> 
+                    About us 
+                    <img src="{% static "img/darrow.png" %}">
+                </a>
+                <div class="about-dropdown">
+                    <p><a href="/about/">About Us</a></p>
+                    <p><a href="{% url 'about_office_page' %}">Offices & Agents</a></p>
+                </div>
+            </div>
+            <div class="blog {% if request.path == '/news_blog/' or request.path == '/news_blog_page/' %}ab_active{% endif %}"><a href="/news_blog/">Blog & News</a></div>
+        </div>
+        <div class="header_menu2">
+            <div class="liked"><a href="#">Liked</a></div>
+            <div class="list {% if request.path == '/list/'%}ab_active{% endif %}" >
+                <a
+                    {% if user.is_authenticated %}
+                        href="{% url 'list_property' %}"
+                    {% else %}
+                        data-toggle="modal" href="#login_modal"
+                    {% endif %}
+                >List your property</a>
+            </div>
+            <div class="search_history"><a href="#">Property search history</a></div>
+            <div class="login">
+                {% if request.user.is_authenticated %}
+                    <a href="{% url 'form_user1' %}">
+                        <img src="{% static 'img/user_logo.png' %}"> {{ request.user.email }}
+                    </a>
+                {% else %}
+                <a data-toggle="modal" href="#login_modal">
+                    Sign Up or Sign In
+                </a>
+                {% endif %}
+            </div>
+        </div>
+    </header>
+    {% block body_content %}
+    {% endblock %} 
+    <div class="footer {% if request.path == '/about_office_page/' %}of_active{% endif %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-2 logo">
+                    <a href="/"><img src="{% static 'img/footer_logo.png' %}"></a>
+                </div>
+                <div class="col-2">
+                    <h3>Explore Us</h3>
+                    <div class="list">
+                        <div><img src="{% static 'img/fb_ico.png' %}">Facebook </div>
+                        <div><img src="{% static 'img/twitter.png' %}">Twitter </div>
+                        <div><img src="{% static 'img/instagram.png' %}">Instagram </div>
+                        <div><img src="{% static 'img/youtube.png' %}">YouTube </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <h3>Browse</h3>
+                    <div class="list">
+                        <div>Lorem Ipsum Dolor Sit </div>
+                        <div>Lorem Ipsum Dolor Sit</div>
+                        <div>Lorem Ipsum Dolor Sit</div>
+                        <div>Lorem Ipsum Dolor Sit</div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <h3> Contact us</h3>
+                    <div class="list">
+                        <div>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.
+                        </div>
+                    </div>
+                    <button>Contact Us</button>
+                </div>
+                <div class="col-3">
+                    <h3>Realtor association</h3>
+                    <div class="list">
+                        <div>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.
+                        </div>
+                    </div>
+                    <img src="{% static 'img/university_logo.png' %}">
+                </div>
+            </div>
+        </div>
+        <div class="copyright container">
+            © 2019 National Association of RealZain® Made with <img src="{% static 'img/like.png' %}"> in America
+        </div>
+    </div>
+    <div class="login_modal modal fade" id="login_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Log In</h3>
+          </div>
+          <div class="modal-body">
+              <form method="post" id="login_form" action="/accounts/login/">
+                  {% csrf_token %}
+                  <div class="form-group">
+                      <label for="id_login">EMAIL</label>
+                      <input name="login" class="form-control" type="email" id="id_login">
+                  </div>
+                  <div class="form-group">
+                    <label for="id_password">PASSWORD</label>
+                    <input name="password" class="form-control" type="password" id="id_password">
+                  </div>
+                  <div class="b_row">
+                      <button id="login_submit" type="button">Log In</button>
+                      <a data-dismiss="modal" data-toggle="modal" href="#reset_modal">Forgot password?</a>
+                  </div>
+                  <div class="separator">
+                      OR
+                  </div>
+              </form>
+              <a href="{% provider_login_url 'facebook' method='js_sdk' %}" class="button facebook_login">Log In with Facebook</a>
+              <a href="{% provider_login_url 'google' %}" class="button google_login">Log In with Google</a>
+              <p>By creating an account, you agree to Iconscout <a href="#"> Terms of Use</a> & <a href="#">Privacy Policy</a> .</p>
+              <div class="signup_div">
+                  Don't have an account?
+                  <a data-dismiss="modal" data-toggle="modal" href="#signup_modal">Signup Now</a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="login_modal modal fade" id="signup_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Create an account</h3>
+          </div>
+          <div class="modal-body">
+              <form method="post" id="signup_form">
+                  {% csrf_token %}
+                  <div class="form-group">
+                      <label for="signup_login">EMAIL</label>
+                      <input name="login" class="form-control" type="email" id="signup_login">
+                  </div>
+                  <div class="form-group">
+                    <label for="signup_password">PASSWORD</label>
+                    <input name="password" class="form-control" type="password" id="signup_password">
+                  </div>
+                  <div class="b_row">
+                      <button id="signup_submit" type="button">Sign Up</button>
+                  </div>
+                  <div class="separator">
+                      OR
+                  </div>
+              </form>
+              <a href="{% provider_login_url 'facebook' method='js_sdk' %}" class="button facebook_login">Sign Up with Facebook</a>
+              <a href="{% provider_login_url 'google' %}" class="button google_login">Sign Up with Google</a>
+              <p>By creating an account, you agree to Iconscout <a href="#"> Terms of Use</a> & <a href="#">Privacy Policy</a> .</p>
+              <div class="signup_div">
+                  Already have an account? <a data-dismiss="modal" data-toggle="modal" href="#login_modal">Log In</a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reset_modal modal fade" id="reset_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  <object data="{% static 'img/svg/f_pass.svg' %}"></object>
+                  <h5>Forgot Password</h5>
+                  <p>Don’t worry! Enter your email address.<br>
+                    We’ll send you password reset lint.</p>
+                  <div class="form-group">
+                      <label for="signup_login">EMAIL</label>
+                      <input name="email" class="form-control" type="email" id="reset_email">
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="alert alert-warning alert-dismissible fade collapse" role="alert">
+        <div class="alert_progress">
+          <div class="alert_bar"></div>
+        </div>
+      <p></p>
+      <button type="button" class="close" aria-label="Close">
+          <div>CLOSE</div>
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $("#login_submit").click(function() {
+        var data = {
+            "csrfmiddlewaretoken": document.getElementsByName('csrfmiddlewaretoken')[0].value,
+            "password": $("#id_password").val(),
+            "login": $("#id_login").val()
+        };
+        $.post({
+          url : "{% url 'ajax_login' %}",
+          type: "POST",
+          data : data,
+          contentType: "application/x-www-form-urlencoded",
+          dataType: "text",
+
+        })
+            .done(function(data) {
+                var err = JSON.parse(data)['errors']
+                console.log(err)
+                if (err) {
+                    toggleAlert(err['__all__'][0]);
+                } else {
+                    location.reload()
+                }
+            })
+            .fail(function(data) {
+              toggleAlert(data['errors']['__all__'][0]);
+            });
+    });
+    $("#signup_submit").click(function() {
+        var data = {
+            "csrfmiddlewaretoken": document.getElementsByName('csrfmiddlewaretoken')[0].value,
+            "password1": $("#signup_password").val(),
+            "email": $("#signup_login").val()
+        };
+        $.post({
+          url : "{% url 'ajax_signup' %}",
+          type: "POST",
+          data : data,
+          contentType: "application/x-www-form-urlencoded",
+          dataType: "text",
+
+        })
+            .done(function(data) {
+                var err = JSON.parse(data)['errors']
+                console.log(err)
+                if (err) {
+                    toggleAlert(err['email']);
+                } else {
+                    location.reload()
+                }
+            })
+            .fail(function(data) {
+              toggleAlert(data['errors']['__all__'][0]);
+            });
+    })
+    $(".alert .close").click(function() {
+        $(".alert").toggleClass('fade in out collapse');
+    })
+    function toggleAlert(html) {
+        $(".alert").toggleClass('fade in out collapse');
+        function progressBar() {
+          var i = 0;
+          if (i == 0) {
+            i = 1;
+            var elem = $(".alert_bar");
+            var width = 1000;
+            var id = setInterval(frame, 15);
+            function frame() {
+              if (width <= 0) {
+                clearInterval(id);
+                i = 0;
+                $(".alert p").html('');
+                $(".alert").toggleClass('fade in out collapse');
+              } else {
+                width--;
+                el_width = width / 10;
+                elem.css('width', el_width + "%");
+              }
+            }
+          }
+        }
+        progressBar();
+        $(".alert p").html(html);
+    }
+</script>
+<script>
+    {% block extra_scripts %}
+
+    {% endblock %}
+</script>
+</body>
+</html>

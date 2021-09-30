@@ -1,0 +1,27 @@
+<svg width="100" height="91" viewBox="0 0 100 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M53.9688 54.2248C53.9684 54.5899 53.9679 54.9579 53.9679 55.3284C53.968 57.2238 55.3205 58.7603 56.9887 58.7602C58.657 58.7601 60.0094 57.2235 60.0093 55.3281C60.0093 54.925 60.0106 54.5089 60.0119 54.0822C60.0243 50.1125 60.2707 42.4597 59.2538 38.5439C58.6675 36.2862 57.6587 33.9916 55.8448 32.3214C53.9776 30.6023 51.6076 29.8648 48.8702 30.0202C47.204 30.1149 45.9208 31.7262 46.0041 33.6192C46.0874 35.5122 47.5056 36.9701 49.1718 36.8755C50.7496 36.7859 51.5619 37.2129 52.0411 37.654C52.5734 38.1441 53.0749 39.0057 53.4594 40.4863C54.2101 43.377 53.9742 49.9863 53.9688 54.2248Z" stroke="#3B3D33" stroke-width="1.5" stroke-linecap="round"/>
+<mask id="path-2-inside-1" fill="white">
+<rect width="100" height="40" rx="1"/>
+</mask>
+<rect width="100" height="40" rx="1" fill="white" stroke="#3B3D33" stroke-width="3" mask="url(#path-2-inside-1)"/>
+<mask id="path-3-inside-2" fill="white">
+<rect x="13" y="13" width="74" height="14" rx="1"/>
+</mask>
+<rect x="13" y="13" width="74" height="14" rx="1" stroke="#3B3D33" stroke-width="3" mask="url(#path-3-inside-2)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M42.3737 53.9063C42.3742 54.2714 42.3747 54.6394 42.3746 55.0099C42.3746 56.9053 41.0221 58.4418 39.3538 58.4417C37.6855 58.4416 36.3332 56.905 36.3333 55.0096C36.3333 54.6065 36.332 54.1904 36.3306 53.7637C36.3182 49.794 35.9874 42.4597 37.0043 38.5439C37.5906 36.2862 38.5994 33.9916 40.4133 32.3214C42.2805 30.6023 44.6505 29.8648 47.3879 30.0202C49.0541 30.1149 50.3373 31.7262 50.254 33.6192C50.1708 35.5122 48.7525 36.9701 47.0863 36.8755C45.5085 36.7859 44.6962 37.2129 44.2171 37.654C43.6847 38.1441 43.1832 39.0057 42.7987 40.4863C42.048 43.377 42.3684 49.6678 42.3737 53.9063Z" fill="white" stroke="#3B3D33" stroke-width="1.5" stroke-linecap="round"/>
+<circle cx="48.5" cy="70.5" r="19.75" fill="white"/>
+<circle cx="48.5" cy="70.5" r="19.75" fill="white"/>
+<circle cx="48.5" cy="70.5" r="19.75" stroke="#3B3D33" stroke-width="1.5"/>
+<circle cx="48.5" cy="70.5" r="12.75" fill="white"/>
+<circle cx="48.5" cy="70.5" r="12.75" fill="white"/>
+<circle cx="48.5" cy="70.5" r="12.75" stroke="#3B3D33" stroke-width="1.5"/>
+<rect x="51.7461" y="66.0894" width="1.5" height="10.8635" transform="rotate(44.545 51.7461 66.0894)" fill="#3B3D33"/>
+<rect x="51.9688" y="74.9106" width="11.0069" height="1.5" transform="rotate(-135.455 51.9688 74.9106)" fill="#3B3D33"/>
+<path d="M24 17.5L28 22M28 17.5L24 22" stroke="#3B3D33" stroke-width="1.5"/>
+<path d="M32 17.5L36 22M36 17.5L32 22" stroke="#3B3D33" stroke-width="1.5"/>
+<path d="M40 17.5L44 22M44 17.5L40 22" stroke="#3B3D33" stroke-width="1.5"/>
+<path d="M48 17.5L52 22M52 17.5L48 22" stroke="#3B3D33" stroke-width="1.5"/>
+<path d="M56 17.5L60 22M60 17.5L56 22" stroke="#3B3D33" stroke-width="1.5"/>
+<path d="M64 17.5L68 22M68 17.5L64 22" stroke="#3B3D33" stroke-width="1.5"/>
+<path d="M72 17.5L76 22M76 17.5L72 22" stroke="#3B3D33" stroke-width="1.5"/>
+</svg>

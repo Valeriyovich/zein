@@ -1,0 +1,1131 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block body_content %}
+<div class="row m0p0">
+    <div class="col-12 m0p0 ">
+        <div class="col m0p0 pt-3 pl-4 pb-3 pr-4" style="border-top: 1px solid  #A4ADAF;">
+            <div class="d-flex justify-content-between">
+                <div class="col-3  m0p0 mr-2">
+                    <input type="text" class="form-control block__input__search" >
+                    <div class="block__position__search">
+                        <img src="{% static 'img/search/search.png' %}" alt="search">
+                    </div>
+                </div>
+
+                <div class="d-flex mr-5">
+                    <div class="dropdown show mr-1">
+                        <a class="btn border pt-2 dropdown-toggle" style="height: 3em" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Any price
+                        </a>
+                      
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown show mr-1">
+                        <a class="btn border pt-2 dropdown-toggle" style="height: 3em;" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            All home types 
+                        </a>
+                      
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown show mr-1">
+                        <a class="btn border pt-2 dropdown-toggle" style="height: 3em" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Any beds, any baths
+                        </a>
+                      
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown show mr-1">
+                        <a class="btn border pt-2 dropdown-toggle" style="height:3em;" href="#" role="button" id="dropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            More filters
+                        </a>
+                      
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink3">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex mr-1">
+                    
+                    <div class="mr-2 d-flex">
+                        <div class="p-1" style="width: 3em; height: 3em;">
+                            <img  src="{% static 'img/search/mini.png' %}" width="100%" height="100%" alt="mini_pic">
+                        </div>
+                        <div class="p-1">
+                            <button class="btn border" style="height: 100%; width: 3em;">
+                                2
+                            </button>
+                        </div>
+                        <div class="p-1">
+                            <button class="btn border" style="height: 100%; width: 3em">
+                                3
+                            </button>
+                        </div>
+                        <div class="p-1">
+                            <button class="btn border " style="height: 100%; width: 3em;">
+                                4
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <button class="btn text-light" style="width: max-content; height: 3em; border-radius: 5px; background-color: #D1964C; opacity: 0.4;">
+                            View Select 4 
+                        </button>
+                    </div>
+                </div>
+
+                
+
+                <div class="pt-2 d-flex ml-3">
+                    <div class="custom-control custom-switch mr-3">
+                        <input type="checkbox" class="custom-control-input" id="customSwitchS">
+                        <label class="custom-control-label" id="checkbox__custom2" for="customSwitchS"></label>
+                    </div>
+                    <div style="width: max-content;">
+                        <span class="text-uppercase text__gray">
+                            map view
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+                
+        </div>
+    </div>
+
+</div>
+<div class="row m0p0">
+    <div class="col-12 m0p0 d-flex">
+        <div class="col-6 m0p0 ">
+            <div class="col-12 m0p0 pt-3 pl-4 pr-4">
+                <div >
+                    <h3>
+                        <b>
+                            Pittsburgh, PA Real Estate
+                        </b>
+                    </h3>
+                </div>
+                <div class="d-flex justify-content-between pb-3 pt-3" style="border-bottom: 1px solid #B2B2B2;">
+                    <div>
+                        <a href="#" class="text-uppercase" style="color:#D1964C">
+                            44 Homes by
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            
+                            
+                        </a>
+
+                        <div class="dropdown">
+                            <button class="btn  " type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="false" style="width: max-content;">
+                                Relevant Listings 
+                              
+                              <img src="{% static 'img/search/down.png' %}" alt="arrowdown">
+
+                            </button>
+                            <ul class="dropdown-menu pl-3 pr-3" style="background-color:  #EEECE9;;" aria-labelledby="dropdownMenu2">
+                                <div class="block__position__romb">
+                                    <div class="block__romb">
+
+                                    </div>
+                                </div>
+                                <li class="d-flex">
+                                    <div class="block__ok">
+                                        <img src="{% static 'img/search/ok.png' %}" alt="ok">
+                                    </div>
+                                    <button class="dropdown-item" type="button">
+                                        Relevant Listing
+                                    </button>
+                                </li>
+                                <li class="d-flex">
+                                    <div class="block__ok">
+                                        
+                                    </div>
+                                    <button class="dropdown-item" type="button">
+                                        Newest Listing
+                                    </button>
+                                </li>
+                                <li class="d-flex">
+                                    <div class="block__ok">
+                                        
+                                    </div>
+                                    <button class="dropdown-item" type="button">
+                                        Lowest Price
+                                    </button>
+                                </li>
+                                <li class="d-flex">
+                                    <div class="block__ok">
+                                        
+                                    </div>
+                                    <button class="dropdown-item" type="button">
+                                        Highest Price
+                                    </button>
+                                </li>
+                                <li class="d-flex">
+                                    <div class="block__ok">
+                                        
+                                    </div>
+                                    <button class="dropdown-item" type="button">
+                                        Open House Date
+                                    </button>
+                                </li>
+                                <li class="d-flex">
+                                    <div class="block__ok">
+                                        
+                                    </div>
+                                    <button class="dropdown-item" type="button">
+                                        Recently Reduced
+                                    </button>
+                                </li>
+                                <li class="d-flex">
+                                    <div class="block__ok">
+                                        
+                                    </div>
+                                    <button class="dropdown-item" type="button">
+                                        Lot Size
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row m0p0 d-flex  mt-4">
+                <div class="col-6 pl-4 pr-4 m0p0">
+                    
+                        <div class=" m0p0" >
+                            <div class="col-12 m0p0">
+                                <img width="100%" height="200px"  style="border-radius: 8px;" src="{% static 'img/search/home1.png' %}" alt="build">
+                                <div class="d-flex ml-2 mt-2" style="position: absolute; top: 0;left: 0; font-size: 15px;">
+                                    <div class="p-1 mr-1" style="background-color: #d1964c; border-radius: 5px;">
+                                        18 Hours ago
+                                    </div>
+                                    <div class="p-1 ml-1" style="background-color: #FFF; border-radius: 5px;">
+                                        <span class="text__gray">Open Sun </span> 8/12 12-2 <span class="text__gray">PM</span>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="p-1" style="position: absolute; right: 8px; top: 8px;">
+                                    <a href="#">
+                                        <img src="{% static 'img/property/heartactive.png' %}" alt="heart active">
+                                    </a>
+                                </div>
+
+                                <div class="p-2" style="position: absolute; bottom: 0; left: 0;">
+                                    <div class="row m0p0">
+                                        <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                        <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                        <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                        <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                    </div>
+                                </div>
+                                <div style="position: absolute; bottom: -1.5rem; right: 0;">
+                                    <a href="#">
+                                        <img src="{% static 'img/property/SelectActive.png' %}" alt="selectactive">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="mt-3">
+                                    <p>
+                                        <b style="font-size: 22px; line-height: 30px;">
+                                            $ 784,000
+                                        </b>
+                                    </p>
+                                </div>
+                                <div>
+                                    56160 Stellar Dr, Bend, OR 97707 Stellar
+                                </div>
+
+                                <div class="d-flex mt-3">
+                                    <div class="col d-flex m0p0">
+                                        <img width="18px" class="mt-2" height="12px" src="{% static 'img/property/bed.png' %}" alt="bed">
+                                        <div class="ml-2 mr-2">
+                                            <b>
+                                                5
+                                            </b>
+                                        </div>
+                                        <div>
+                                            <p class="text__gray">
+                                                beds
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col d-flex m0p0">
+                                        <img width="18px" class="mt-1" height="18px" src="{% static 'img/property/bath.png' %}" alt="bed">
+                                        <div class="ml-2 mr-2">
+                                            <b>
+                                                2
+                                            </b>
+                                        </div>
+                                        <div>
+                                            <p class="text__gray">
+                                                beds
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col d-flex m0p0">
+                                        <img width="15px" class="mt-2" height="13px" src="{% static 'img/property/map.png' %}" alt="bed">
+                                        <div class="ml-2 mr-2">
+                                            <b>
+                                               2
+                                            </b>
+                                        </div>
+                                        <div>
+                                            <p class="text__gray">
+                                                acrec lot
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                </div>
+                <div class="col-6 pl-4 pr-4 m0p0">
+                    
+                    <div class=" m0p0" >
+                        <div class="col-12 m0p0">
+                            <img width="100%" height="200px"  style="border-radius: 8px;" src="{% static 'img/search/home2.png' %}" alt="build">
+                            <div class="d-flex ml-2 mt-2" style="position: absolute; top: 0;left: 0; font-size: 15px;">
+                                <div class="p-1 mr-1" style="background-color: #d1964c; border-radius: 5px;">
+                                    18 Hours ago
+                                </div>
+                                <div class="p-1 ml-1" style="background-color: #FFF; border-radius: 5px;">
+                                    <span class="text__gray">Open Sun </span> 8/12 12-2 <span class="text__gray">PM</span>
+                                </div>
+                                
+                            </div>
+
+                            <div class="p-1" style="position: absolute; right: 8px; top: 8px;">
+                                <a href="#">
+                                    <img src="{% static 'img/property/heart.png' %}" alt="heart ">
+                                </a>
+                            </div>
+
+                            <div class="p-2" style="position: absolute; bottom: 0; left: 0;">
+                                <div class="row m0p0">
+                                    <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                    <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                    <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                    <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                </div>
+                            </div>
+                            <div style="position: absolute; bottom: -1.5rem; right: 0;">
+                                <a href="#">
+                                    <img src="{% static 'img/property/Select.png' %}" alt="select">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="mt-3">
+                                <p>
+                                    <b style="font-size: 22px; line-height: 30px;">
+                                        $ 784,000
+                                    </b>
+                                </p>
+                            </div>
+                            <div>
+                                56160 Stellar Dr, Bend, OR 97707 Stellar
+                            </div>
+
+                            <div class="d-flex mt-3">
+                                <div class="col d-flex m0p0">
+                                    <img width="18px" class="mt-2" height="12px" src="{% static 'img/property/bed.png' %}" alt="bed">
+                                    <div class="ml-2 mr-2">
+                                        <b>
+                                            5
+                                        </b>
+                                    </div>
+                                    <div>
+                                        <p class="text__gray">
+                                            beds
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col d-flex m0p0">
+                                    <img width="18px" class="mt-1" height="18px" src="{% static 'img/property/bath.png' %}" alt="bed">
+                                    <div class="ml-2 mr-2">
+                                        <b>
+                                            2
+                                        </b>
+                                    </div>
+                                    <div>
+                                        <p class="text__gray">
+                                            beds
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col d-flex m0p0">
+                                    <img width="15px" class="mt-2" height="13px" src="{% static 'img/property/map.png' %}" alt="bed">
+                                    <div class="ml-2 mr-2">
+                                        <b>
+                                           2
+                                        </b>
+                                    </div>
+                                    <div>
+                                        <p class="text__gray">
+                                            acrec lot
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="col-6 pl-4 pr-4 m0p0">
+                    
+                    <div class=" m0p0" >
+                        <div class="col-12 m0p0">
+                            <img width="100%" height="200px"  style="border-radius: 8px;" src="{% static 'img/search/home3.png' %}" alt="build">
+                            <div class="d-flex ml-2 mt-2" style="position: absolute; top: 0;left: 0; font-size: 15px;">
+                                <div class="p-1 mr-1" style="background-color: #d1964c; border-radius: 5px;">
+                                    18 Hours ago
+                                </div>
+                                <div class="p-1 ml-1" style="background-color: #FFF; border-radius: 5px;">
+                                    <span class="text__gray">Open Sun </span> 8/12 12-2 <span class="text__gray">PM</span>
+                                </div>
+                                
+                            </div>
+
+                            <div class="p-1" style="position: absolute; right: 8px; top: 8px;">
+                                <a href="#">
+                                    <img src="{% static 'img/property/heart.png' %}" alt="heart">
+                                </a>
+                            </div>
+
+                            <div class="p-2" style="position: absolute; bottom: 0; left: 0;">
+                                <div class="row m0p0">
+                                    <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                    <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                    <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                    <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                </div>
+                            </div>
+                            <div style="position: absolute; bottom: -1.5rem; right: 0;">
+                                <a href="#">
+                                    <img src="{% static 'img/property/Select.png' %}" alt="select">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="mt-3">
+                                <p>
+                                    <b style="font-size: 22px; line-height: 30px;">
+                                        $ 784,000
+                                    </b>
+                                </p>
+                            </div>
+                            <div>
+                                56160 Stellar Dr, Bend, OR 97707 Stellar
+                            </div>
+
+                            <div class="d-flex mt-3">
+                                <div class="col d-flex m0p0">
+                                    <img width="18px" class="mt-2" height="12px" src="{% static 'img/property/bed.png' %}" alt="bed">
+                                    <div class="ml-2 mr-2">
+                                        <b>
+                                            5
+                                        </b>
+                                    </div>
+                                    <div>
+                                        <p class="text__gray">
+                                            beds
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col d-flex m0p0">
+                                    <img width="18px" class="mt-1" height="18px" src="{% static 'img/property/bath.png' %}" alt="bed">
+                                    <div class="ml-2 mr-2">
+                                        <b>
+                                            2
+                                        </b>
+                                    </div>
+                                    <div>
+                                        <p class="text__gray">
+                                            beds
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col d-flex m0p0">
+                                    <img width="15px" class="mt-2" height="13px" src="{% static 'img/property/map.png' %}" alt="bed">
+                                    <div class="ml-2 mr-2">
+                                        <b>
+                                           2
+                                        </b>
+                                    </div>
+                                    <div>
+                                        <p class="text__gray">
+                                            acrec lot
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="col-6 pl-4 pr-4 m0p0">
+                    
+                    <div class=" m0p0" >
+                        <div class="col-12 m0p0">
+                            <img width="100%" height="200px"  style="border-radius: 8px;" src="{% static 'img/search/home4.png' %}" alt="build">
+                            <div class="d-flex ml-2 mt-2" style="position: absolute; top: 0;left: 0; font-size: 15px;">
+                                <div class="p-1 mr-1" style="background-color: #d1964c; border-radius: 5px;">
+                                    18 Hours ago
+                                </div>
+                                <div class="p-1 ml-1" style="background-color: #FFF; border-radius: 5px;">
+                                    <span class="text__gray">Open Sun </span> 8/12 12-2 <span class="text__gray">PM</span>
+                                </div>
+                                
+                            </div>
+
+                            <div class="p-1" style="position: absolute; right: 8px; top: 8px;">
+                                <a href="#">
+                                    <img src="{% static 'img/property/heartactive.png' %}" alt="heart active">
+                                </a>
+                            </div>
+
+                            <div class="p-2" style="position: absolute; bottom: 0; left: 0;">
+                                <div class="row m0p0">
+                                    <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                    <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                    <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                    <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                </div>
+                            </div>
+                            <div style="position: absolute; bottom: -1.5rem; right: 0;">
+                                <a href="#">
+                                    <img src="{% static 'img/property/SelectActive.png' %}" alt="selectactive">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="mt-3">
+                                <p>
+                                    <b style="font-size: 22px; line-height: 30px;">
+                                        $ 784,000
+                                    </b>
+                                </p>
+                            </div>
+                            <div>
+                                56160 Stellar Dr, Bend, OR 97707 Stellar
+                            </div>
+
+                            <div class="d-flex mt-3">
+                                <div class="col d-flex m0p0">
+                                    <img width="18px" class="mt-2" height="12px" src="{% static 'img/property/bed.png' %}" alt="bed">
+                                    <div class="ml-2 mr-2">
+                                        <b>
+                                            5
+                                        </b>
+                                    </div>
+                                    <div>
+                                        <p class="text__gray">
+                                            beds
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col d-flex m0p0">
+                                    <img width="18px" class="mt-1" height="18px" src="{% static 'img/property/bath.png' %}" alt="bed">
+                                    <div class="ml-2 mr-2">
+                                        <b>
+                                            2
+                                        </b>
+                                    </div>
+                                    <div>
+                                        <p class="text__gray">
+                                            beds
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col d-flex m0p0">
+                                    <img width="15px" class="mt-2" height="13px" src="{% static 'img/property/map.png' %}" alt="bed">
+                                    <div class="ml-2 mr-2">
+                                        <b>
+                                           2
+                                        </b>
+                                    </div>
+                                    <div>
+                                        <p class="text__gray">
+                                            acrec lot
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 m0p0">
+            <img width="100%" height="100%" src="{% static 'img/search/map.png' %}" alt="map">
+        </div>
+    </div>
+</div>
+
+<div class="row m0p0 pb-3" style="height: max-content; background-color: #FFF; width: 100%;">
+    <div class="col-12 d-flex justify-content-center m0p0">
+        <div class="col-9 m0p0 pt-5">
+            <div class="d-flex pt-3  justify-content-between">
+                <div class="pl-3">
+                    <h1 style="font-size: 52px; line-height: 60px;">
+                        <b>
+                            You’re almost there! 
+                        </b>
+                    </h1>
+                </div>
+
+                <div class="pt-3">
+                    <img src="{% static 'img/cross.png' %}" alt="cross">
+                </div>
+            </div>
+            <div class="col-12 m0p0 d-flex pt-3">
+                <div class="col-6 m0p0">
+                    <div class="row m0p0 d-flex  mt-4">
+                        <div class="col-6 p-3 m0p0">
+                            
+                                <div class=" m0p0" >
+                                    <div class="col-12 m0p0">
+                                        <img width="100%" height="200px"  style="border-radius: 8px;" src="{% static 'img/search/home1.png' %}" alt="build">
+                                        <div class="d-flex ml-2 mt-2" style="position: absolute; top: 0;left: 0; font-size: 15px;">
+                                            <div class="p-1 mr-1" style="background-color: #d1964c; border-radius: 5px;">
+                                                18 Hours ago
+                                            </div>
+                                            <div class="p-1 ml-1" style="background-color: #FFF; border-radius: 5px;">
+                                                <span class="text__gray">Open Sun </span> 8/12 12-2 <span class="text__gray">PM</span>
+                                            </div>
+                                            
+                                        </div>
+        
+                                        <div class="p-1" style="position: absolute; right: 8px; top: 8px;">
+                                            <a href="#">
+                                                <img src="{% static 'img/property/heartactive.png' %}" alt="heart active">
+                                            </a>
+                                        </div>
+        
+                                        <div class="p-2" style="position: absolute; bottom: 0; left: 0;">
+                                            <div class="row m0p0">
+                                                <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                                <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                                <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                                <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                            </div>
+                                        </div>
+                                        <div style="position: absolute; bottom: -1.5rem; right: 0;">
+                                            <a href="#">
+                                                <img src="{% static 'img/property/SelectActive.png' %}" alt="selectactive">
+                                            </a>
+                                        </div>
+                                    </div>
+        
+                                    <div class="col-12">
+                                        <div class="mt-3">
+                                            <p>
+                                                <b style="font-size: 22px; line-height: 30px;">
+                                                    $ 784,000
+                                                </b>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            56160 Stellar Dr, Bend, OR 97707 Stellar
+                                        </div>
+        
+                                        <div class="d-flex mt-3">
+                                            <div class="col d-flex m0p0">
+                                                <img width="18px" class="mt-2" height="12px" src="{% static 'img/property/bed.png' %}" alt="bed">
+                                                <div class="ml-2 mr-2">
+                                                    <b>
+                                                        5
+                                                    </b>
+                                                </div>
+                                                <div>
+                                                    <p class="text__gray">
+                                                        beds
+                                                    </p>
+                                                </div>
+                                            </div>
+        
+                                            <div class="col d-flex m0p0">
+                                                <img width="18px" class="mt-1" height="18px" src="{% static 'img/property/bath.png' %}" alt="bed">
+                                                <div class="ml-2 mr-2">
+                                                    <b>
+                                                        2
+                                                    </b>
+                                                </div>
+                                                <div>
+                                                    <p class="text__gray">
+                                                        beds
+                                                    </p>
+                                                </div>
+                                            </div>
+        
+                                            <div class="col d-flex m0p0">
+                                                <img width="15px" class="mt-2" height="13px" src="{% static 'img/property/map.png' %}" alt="bed">
+                                                <div class="ml-2 mr-2">
+                                                    <b>
+                                                       2
+                                                    </b>
+                                                </div>
+                                                <div style="width: max-content;">
+                                                    <p class="text__gray">
+                                                        acrec lot
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            
+                        </div>
+                        <div class="col-6 p-3 m0p0">
+                            
+                            <div class=" m0p0" >
+                                <div class="col-12 m0p0">
+                                    <img width="100%" height="200px"  style="border-radius: 8px;" src="{% static 'img/search/home2.png' %}" alt="build">
+                                    <div class="d-flex ml-2 mt-2" style="position: absolute; top: 0;left: 0; font-size: 15px;">
+                                        <div class="p-1 mr-1" style="background-color: #d1964c; border-radius: 5px;">
+                                            18 Hours ago
+                                        </div>
+                                        <div class="p-1 ml-1" style="background-color: #FFF; border-radius: 5px;">
+                                            <span class="text__gray">Open Sun </span> 8/12 12-2 <span class="text__gray">PM</span>
+                                        </div>
+                                        
+                                    </div>
+        
+                                    <div class="p-1" style="position: absolute; right: 8px; top: 8px;">
+                                        <a href="#">
+                                            <img src="{% static 'img/property/heart.png' %}" alt="heart ">
+                                        </a>
+                                    </div>
+        
+                                    <div class="p-2" style="position: absolute; bottom: 0; left: 0;">
+                                        <div class="row m0p0">
+                                            <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                            <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                            <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                            <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                        </div>
+                                    </div>
+                                    <div style="position: absolute; bottom: -1.5rem; right: 0;">
+                                        <a href="#">
+                                            <img src="{% static 'img/property/Select.png' %}" alt="select">
+                                        </a>
+                                    </div>
+                                </div>
+        
+                                <div class="col-12">
+                                    <div class="mt-3">
+                                        <p>
+                                            <b style="font-size: 22px; line-height: 30px;">
+                                                $ 784,000
+                                            </b>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        56160 Stellar Dr, Bend, OR 97707 Stellar
+                                    </div>
+        
+                                    <div class="d-flex mt-3">
+                                        <div class="col d-flex m0p0">
+                                            <img width="18px" class="mt-2" height="12px" src="{% static 'img/property/bed.png' %}" alt="bed">
+                                            <div class="ml-2 mr-2">
+                                                <b>
+                                                    5
+                                                </b>
+                                            </div>
+                                            <div>
+                                                <p class="text__gray">
+                                                    beds
+                                                </p>
+                                            </div>
+                                        </div>
+        
+                                        <div class="col d-flex m0p0">
+                                            <img width="18px" class="mt-1" height="18px" src="{% static 'img/property/bath.png' %}" alt="bed">
+                                            <div class="ml-2 mr-2">
+                                                <b>
+                                                    2
+                                                </b>
+                                            </div>
+                                            <div>
+                                                <p class="text__gray">
+                                                    beds
+                                                </p>
+                                            </div>
+                                        </div>
+        
+                                        <div class="col d-flex m0p0">
+                                            <img width="15px" class="mt-2" height="13px" src="{% static 'img/property/map.png' %}" alt="bed">
+                                            <div class="ml-2 mr-2">
+                                                <b>
+                                                   2
+                                                </b>
+                                            </div>
+                                            <div style="width: max-content;">
+                                                <p class="text__gray">
+                                                    acrec lot
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col-6 p-3 m0p0">
+                            
+                            <div class=" m0p0" >
+                                <div class="col-12 m0p0">
+                                    <img width="100%" height="200px"  style="border-radius: 8px;" src="{% static 'img/search/home3.png' %}" alt="build">
+                                    <div class="d-flex ml-2 mt-2" style="position: absolute; top: 0;left: 0; font-size: 15px;">
+                                        <div class="p-1 mr-1" style="background-color: #d1964c; border-radius: 5px;">
+                                            18 Hours ago
+                                        </div>
+                                        <div class="p-1 ml-1" style="background-color: #FFF; border-radius: 5px;">
+                                            <span class="text__gray">Open Sun </span> 8/12 12-2 <span class="text__gray">PM</span>
+                                        </div>
+                                        
+                                    </div>
+        
+                                    <div class="p-1" style="position: absolute; right: 8px; top: 8px;">
+                                        <a href="#">
+                                            <img src="{% static 'img/property/heart.png' %}" alt="heart">
+                                        </a>
+                                    </div>
+        
+                                    <div class="p-2" style="position: absolute; bottom: 0; left: 0;">
+                                        <div class="row m0p0">
+                                            <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                            <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                            <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                            <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                        </div>
+                                    </div>
+                                    <div style="position: absolute; bottom: -1.5rem; right: 0;">
+                                        <a href="#">
+                                            <img src="{% static 'img/property/Select.png' %}" alt="select">
+                                        </a>
+                                    </div>
+                                </div>
+        
+                                <div class="col-12">
+                                    <div class="mt-3">
+                                        <p>
+                                            <b style="font-size: 22px; line-height: 30px;">
+                                                $ 784,000
+                                            </b>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        56160 Stellar Dr, Bend, OR 97707 Stellar
+                                    </div>
+        
+                                    <div class="d-flex mt-3">
+                                        <div class="col d-flex m0p0">
+                                            <img width="18px" class="mt-2" height="12px" src="{% static 'img/property/bed.png' %}" alt="bed">
+                                            <div class="ml-2 mr-2">
+                                                <b>
+                                                    5
+                                                </b>
+                                            </div>
+                                            <div>
+                                                <p class="text__gray">
+                                                    beds
+                                                </p>
+                                            </div>
+                                        </div>
+        
+                                        <div class="col d-flex m0p0">
+                                            <img width="18px" class="mt-1" height="18px" src="{% static 'img/property/bath.png' %}" alt="bed">
+                                            <div class="ml-2 mr-2">
+                                                <b>
+                                                    2
+                                                </b>
+                                            </div>
+                                            <div>
+                                                <p class="text__gray">
+                                                    beds
+                                                </p>
+                                            </div>
+                                        </div>
+        
+                                        <div class="col d-flex m0p0">
+                                            <img width="15px" class="mt-2" height="13px" src="{% static 'img/property/map.png' %}" alt="bed">
+                                            <div class="ml-2 mr-2">
+                                                <b>
+                                                   2
+                                                </b>
+                                            </div>
+                                            <div style="width: max-content;">
+                                                <p class="text__gray">
+                                                    acrec lot
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="col-6 p-3 m0p0">
+                            
+                            <div class=" m0p0" >
+                                <div class="col-12 m0p0">
+                                    <img width="100%" height="200px"  style="border-radius: 8px;" src="{% static 'img/search/home4.png' %}" alt="build">
+                                    <div class="d-flex ml-2 mt-2" style="position: absolute; top: 0;left: 0; font-size: 15px;">
+                                        <div class="p-1 mr-1" style="background-color: #d1964c; border-radius: 5px;">
+                                            18 Hours ago
+                                        </div>
+                                        <div class="p-1 ml-1" style="background-color: #FFF; border-radius: 5px;">
+                                            <span class="text__gray">Open Sun </span> 8/12 12-2 <span class="text__gray">PM</span>
+                                        </div>
+                                        
+                                    </div>
+        
+                                    <div class="p-1" style="position: absolute; right: 8px; top: 8px;">
+                                        <a href="#">
+                                            <img src="{% static 'img/property/heartactive.png' %}" alt="heart active">
+                                        </a>
+                                    </div>
+        
+                                    <div class="p-2" style="position: absolute; bottom: 0; left: 0;">
+                                        <div class="row m0p0">
+                                            <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                            <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                            <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                            <div class="m-1 border " style="height: 8px; width: 8px; background-color: #FFF; border-radius: 50%;"></div>
+                                        </div>
+                                    </div>
+                                    <div style="position: absolute; bottom: -1.5rem; right: 0;">
+                                        <a href="#">
+                                            <img src="{% static 'img/property/SelectActive.png' %}" alt="selectactive">
+                                        </a>
+                                    </div>
+                                </div>
+        
+                                <div class="col-12">
+                                    <div class="mt-3">
+                                        <p>
+                                            <b style="font-size: 22px; line-height: 30px;">
+                                                $ 784,000
+                                            </b>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        56160 Stellar Dr, Bend, OR 97707 Stellar
+                                    </div>
+        
+                                    <div class="d-flex mt-3">
+                                        <div class="col d-flex m0p0">
+                                            <img width="18px" class="mt-2" height="12px" src="{% static 'img/property/bed.png' %}" alt="bed">
+                                            <div class="ml-2 mr-2">
+                                                <b>
+                                                    5
+                                                </b>
+                                            </div>
+                                            <div>
+                                                <p class="text__gray">
+                                                    beds
+                                                </p>
+                                            </div>
+                                        </div>
+        
+                                        <div class="col d-flex m0p0">
+                                            <img width="18px" class="mt-1" height="18px" src="{% static 'img/property/bath.png' %}" alt="bed">
+                                            <div class="ml-2 mr-2">
+                                                <b>
+                                                    2
+                                                </b>
+                                            </div>
+                                            <div>
+                                                <p class="text__gray">
+                                                    beds
+                                                </p>
+                                            </div>
+                                        </div>
+        
+                                        <div class="col d-flex m0p0">
+                                            <img width="15px" class="mt-2" height="13px" src="{% static 'img/property/map.png' %}" alt="bed">
+                                            <div class="ml-2 mr-2">
+                                                <b>
+                                                   2
+                                                </b>
+                                            </div>
+                                            <div style="width: max-content;">
+                                                <p class="text__gray">
+                                                    acrec lot
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 m0p0">
+                    <div style="padding-top: 2em; padding-left: 1em;">
+                        <h3>
+                            <b>
+                                Get in contact with an agent and ask more about the property you like!
+                            </b>
+                        </h3>
+                    </div>
+                    <div class="pl-3 pt-5">
+                        <div class="d-flex">
+                            <div class="pt-1 pr-4" style="width: 10px; height: 10px;">
+                                <img src="{% static 'img/search/mappin.png' %}" alt=" mappin">
+                            </div>
+    
+                            <div>
+                                <p>
+                                    56160 Stellar Dr, Bend, OR 97707 Stellar
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="pt-1 pr-4"  style="width: 10px; height: 10px;">
+                            </div>
+                            
+                            <div>
+                                <p>
+                                    1714 Pine Run Rd, West Mifflin, PA 15122
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="pt-1 pr-4"  style="width: 10px; height: 10px;">
+                            </div>
+                            
+                            <div>
+                                <p>
+                                    340 Pennview Dr, Pittsburgh, PA 15235
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="pt-1 pr-4"  style="width: 10px; height: 10px;">
+                            </div>
+                            
+                            <div>
+                                <p>
+                                    1025 Augusta Way, Pittsburgh, PA 15236
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pl-3 pr-3">
+                        <form class="row m0p0" action="">
+                            <div class="row mt-3 m0p0" style="width: 100%;">
+                                <div class="col-12 m0p0 mr-2">
+                                    <label for="validationCustom01" class="form-label ml-1">
+                                        <img src="{% static 'img/property/Union.png' %}" alt="union">
+                                    </label>
+                                    <input type="text" class="form-control bg__milk" id="validationCustom01" value="Mark" required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                               
+                            </div>
+
+                            <div class="row m0p0 mt-3" style="width: 100%;">
+                                <div class="col m0p0  mr-2">
+                                    <label for="validationCustom02" class="form-label ml-1">
+                                        <img src="{% static 'img/property/VectorT.png' %}" alt="Tel">
+                                    </label>
+                                    <input type="text" class="form-control bg__milk" id="validationCustom02" value="+1 456 ___ ___ __" required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                <div class="col m0p0 ">
+                                    <label for="validationCustom03" class="form-label ml-1">
+                                        <img src="{% static 'img/property/Union.png' %}" alt="union">
+                                    </label>
+                                    <input type="text" class="form-control bg__milk" id="validationCustom03" value="m0421717@gmail.com" required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="row m0p0 mt-3" style="width: 100%;">
+                                <div class="col-12 m0p0 ">
+                                    <label for="validationCustom01" class="form-label ml-1">
+                                        <img src="{% static 'img/property/Union.png' %}" alt="union">
+                                    </label>
+                                    <textarea name="area" id="" style="height: 11em;" class="form-control bg__milk">I am interested in 56160 Stellar Dr, Bend, OR 97707</textarea>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="row m0p0 mt-3" style="width: 100%;">
+                                <button class="btn text-light" style="background-color: #d1964c;width: 100%;">
+                                    Contact agent
+                                </button>
+                            </div>
+                            
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+{% endblock %}
